@@ -36,3 +36,8 @@ env/
 *.swo
 .DS_Store
 Thumbs.db
+
+# Isolated Repositories
+Vaibhavsharma45/
+Vaibhavsharma45.github.io/
+
