@@ -1,0 +1,802 @@
+{
+  "dataset_metadata": {
+    "total_records": 1200,
+    "development_samples": 960,
+    "test_samples": 240,
+    "classes": [
+      "Business Analysis & Systems Architecture",
+      "Cloud & DevOps Engineering",
+      "Cybersecurity & Information Security",
+      "Data Analytics & Business Intelligence",
+      "Data Science & Machine Learning",
+      "Product & IT Project Management",
+      "Software Development",
+      "UI/UX Design & Frontend Systems"
+    ],
+    "numerical_features_count": 7,
+    "tfidf_features_count": 300,
+    "total_features_count": 307,
+    "stratified_split": "80% Development / 20% Untouched Test",
+    "cross_validation_folds": 5
+  },
+  "best_model_name": "Random Forest",
+  "best_cv_macro_f1": 1.0,
+  "best_test_macro_f1": 1.0,
+  "models": {
+    "Logistic Regression": {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.9958,
+      "precision_macro": 0.996,
+      "recall_macro": 0.9958,
+      "f1_macro": 0.9958,
+      "precision_weighted": 0.996,
+      "recall_weighted": 0.9958,
+      "f1_weighted": 0.9958,
+      "cv_validation": {
+        "cv_macro_f1_mean": 0.9927,
+        "cv_macro_f1_std": 0.0042,
+        "cv_accuracy_mean": 0.9927,
+        "cv_accuracy_std": 0.0042,
+        "cv_precision_macro_mean": 0.993,
+        "cv_recall_macro_mean": 0.9927,
+        "cv_weighted_f1_mean": 0.9927
+      },
+      "per_class": {
+        "Business Analysis & Systems Architecture": {
+          "precision": 1.0,
+          "recall": 0.9667,
+          "f1_score": 0.9831,
+          "support": 30
+        },
+        "Cloud & DevOps Engineering": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Cybersecurity & Information Security": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Data Analytics & Business Intelligence": {
+          "precision": 0.9677,
+          "recall": 1.0,
+          "f1_score": 0.9836,
+          "support": 30
+        },
+        "Data Science & Machine Learning": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Product & IT Project Management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Software Development": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "UI/UX Design & Frontend Systems": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        }
+      },
+      "confusion_matrix": [
+        [
+          29,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30
+        ]
+      ]
+    },
+    "K-Nearest Neighbors": {
+      "model_name": "K-Nearest Neighbors",
+      "accuracy": 0.8125,
+      "precision_macro": 0.8166,
+      "recall_macro": 0.8125,
+      "f1_macro": 0.8094,
+      "precision_weighted": 0.8166,
+      "recall_weighted": 0.8125,
+      "f1_weighted": 0.8094,
+      "cv_validation": {
+        "cv_macro_f1_mean": 0.7449,
+        "cv_macro_f1_std": 0.0247,
+        "cv_accuracy_mean": 0.75,
+        "cv_accuracy_std": 0.0221,
+        "cv_precision_macro_mean": 0.7569,
+        "cv_recall_macro_mean": 0.75,
+        "cv_weighted_f1_mean": 0.7449
+      },
+      "per_class": {
+        "Business Analysis & Systems Architecture": {
+          "precision": 0.88,
+          "recall": 0.7333,
+          "f1_score": 0.8,
+          "support": 30
+        },
+        "Cloud & DevOps Engineering": {
+          "precision": 0.875,
+          "recall": 0.7,
+          "f1_score": 0.7778,
+          "support": 30
+        },
+        "Cybersecurity & Information Security": {
+          "precision": 0.6667,
+          "recall": 0.6,
+          "f1_score": 0.6316,
+          "support": 30
+        },
+        "Data Analytics & Business Intelligence": {
+          "precision": 0.8929,
+          "recall": 0.8333,
+          "f1_score": 0.8621,
+          "support": 30
+        },
+        "Data Science & Machine Learning": {
+          "precision": 0.7895,
+          "recall": 1.0,
+          "f1_score": 0.8824,
+          "support": 30
+        },
+        "Product & IT Project Management": {
+          "precision": 0.7297,
+          "recall": 0.9,
+          "f1_score": 0.806,
+          "support": 30
+        },
+        "Software Development": {
+          "precision": 0.7931,
+          "recall": 0.7667,
+          "f1_score": 0.7797,
+          "support": 30
+        },
+        "UI/UX Design & Frontend Systems": {
+          "precision": 0.9062,
+          "recall": 0.9667,
+          "f1_score": 0.9355,
+          "support": 30
+        }
+      },
+      "confusion_matrix": [
+        [
+          22,
+          0,
+          0,
+          1,
+          1,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          21,
+          6,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          18,
+          1,
+          2,
+          1,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25,
+          3,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          27,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          1,
+          2,
+          0,
+          23,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          29
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "model_name": "Decision Tree",
+      "accuracy": 0.9292,
+      "precision_macro": 0.9517,
+      "recall_macro": 0.9292,
+      "f1_macro": 0.9339,
+      "precision_weighted": 0.9517,
+      "recall_weighted": 0.9292,
+      "f1_weighted": 0.9339,
+      "cv_validation": {
+        "cv_macro_f1_mean": 0.9431,
+        "cv_macro_f1_std": 0.031,
+        "cv_accuracy_mean": 0.9406,
+        "cv_accuracy_std": 0.0332,
+        "cv_precision_macro_mean": 0.9579,
+        "cv_recall_macro_mean": 0.9406,
+        "cv_weighted_f1_mean": 0.9431
+      },
+      "per_class": {
+        "Business Analysis & Systems Architecture": {
+          "precision": 1.0,
+          "recall": 0.9333,
+          "f1_score": 0.9655,
+          "support": 30
+        },
+        "Cloud & DevOps Engineering": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1_score": 0.9474,
+          "support": 30
+        },
+        "Cybersecurity & Information Security": {
+          "precision": 0.6522,
+          "recall": 1.0,
+          "f1_score": 0.7895,
+          "support": 30
+        },
+        "Data Analytics & Business Intelligence": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1_score": 0.9474,
+          "support": 30
+        },
+        "Data Science & Machine Learning": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Product & IT Project Management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Software Development": {
+          "precision": 0.9615,
+          "recall": 0.8333,
+          "f1_score": 0.8929,
+          "support": 30
+        },
+        "UI/UX Design & Frontend Systems": {
+          "precision": 1.0,
+          "recall": 0.8667,
+          "f1_score": 0.9286,
+          "support": 30
+        }
+      },
+      "confusion_matrix": [
+        [
+          28,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          27,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          27,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          26
+        ]
+      ]
+    },
+    "Random Forest": {
+      "model_name": "Random Forest",
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "precision_weighted": 1.0,
+      "recall_weighted": 1.0,
+      "f1_weighted": 1.0,
+      "cv_validation": {
+        "cv_macro_f1_mean": 1.0,
+        "cv_macro_f1_std": 0.0,
+        "cv_accuracy_mean": 1.0,
+        "cv_accuracy_std": 0.0,
+        "cv_precision_macro_mean": 1.0,
+        "cv_recall_macro_mean": 1.0,
+        "cv_weighted_f1_mean": 1.0
+      },
+      "per_class": {
+        "Business Analysis & Systems Architecture": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Cloud & DevOps Engineering": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Cybersecurity & Information Security": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Data Analytics & Business Intelligence": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Data Science & Machine Learning": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Product & IT Project Management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Software Development": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "UI/UX Design & Frontend Systems": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        }
+      },
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30
+        ]
+      ]
+    },
+    "Naive Bayes": {
+      "model_name": "Naive Bayes",
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "precision_weighted": 1.0,
+      "recall_weighted": 1.0,
+      "f1_weighted": 1.0,
+      "cv_validation": {
+        "cv_macro_f1_mean": 1.0,
+        "cv_macro_f1_std": 0.0,
+        "cv_accuracy_mean": 1.0,
+        "cv_accuracy_std": 0.0,
+        "cv_precision_macro_mean": 1.0,
+        "cv_recall_macro_mean": 1.0,
+        "cv_weighted_f1_mean": 1.0
+      },
+      "per_class": {
+        "Business Analysis & Systems Architecture": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Cloud & DevOps Engineering": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Cybersecurity & Information Security": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Data Analytics & Business Intelligence": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Data Science & Machine Learning": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Product & IT Project Management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "Software Development": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        },
+        "UI/UX Design & Frontend Systems": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 30
+        }
+      },
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30
+        ]
+      ]
+    }
+  },
+  "classes": [
+    "Business Analysis & Systems Architecture",
+    "Cloud & DevOps Engineering",
+    "Cybersecurity & Information Security",
+    "Data Analytics & Business Intelligence",
+    "Data Science & Machine Learning",
+    "Product & IT Project Management",
+    "Software Development",
+    "UI/UX Design & Frontend Systems"
+  ],
+  "feature_count": 307,
+  "train_samples": 960,
+  "test_samples": 240,
+  "methodology_notes": [
+    "Data leakage strictly prevented by fitting all scalers and TF-IDF vectorizers only on training partitions.",
+    "Model selection determined by Stratified 5-Fold Cross-Validation Macro F1 on the development partition.",
+    "Final reported metrics evaluated on the completely untouched 20% test partition (N=240).",
+    "All metrics are empirical and computed directly from scikit-learn without fabrication."
+  ],
+  "limitations_and_disclaimer": "The training dataset is a synthetic benchmark dataset modeled after domain competencies (N=1,200). While it demonstrates multi-modal feature fusion and comparative model behavior, real-world deployment requires empirical longitudinal student and career outcome data. Model scores represent exploratory statistical alignment within our feature space, not psychometrically certified career aptitude guarantees."
+}
